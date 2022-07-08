@@ -1,188 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience Life - Make yourself comfortable."
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/res-details.css" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience Life - Make yourself comfortable.">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/res-details.css">
-    
     <title>Kimberly Hotel</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-</head>
-<body class="bg-neutral-6">
- <header>
-        <nav class="navbar bg-white d-flex justify-content-between border-bottom hms-border m-0 p-0 py-3 py-md-5 py-lg-0">
-            <button class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminMobileMenu" aria-controls="adminMobileMenu">
-                <span class=""><i class="fa-solid fa-bars text-white"></i></span>
-            </button>
-              
-            <div class="offcanvas offcanvas-start width-50" tabindex="-1" id="adminMobileMenu" aria-label="Kimberly Hotels">
-                <div class="offcanvas-header">
-                    <a href="#" class="navbar-brand offcanvas-title height-50px ms-3">
-                        <img src="img/logo.png" alt="Our Logo" class="h-100">
-                    </a>
-                </div>
-                <div class="offcanvas-body">
-                    
-                </div>
-            </div>
-            <a href="#" class="navbar-brand height-50px lg-height-75px ms-0 ms-lg-4 ms-xl-5">
-                <img src="img/logo.png" alt="Our Logo" class="h-100">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body class="bg-neutral-6">
+    <header>
+      <nav
+        class="navbar bg-white d-flex justify-content-between border-bottom hms-border m-0 p-0 py-3 py-md-5 py-lg-0"
+      >
+        <button
+          class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 ms-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#adminMobileMenu"
+          aria-controls="adminMobileMenu"
+        >
+          <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start width-50"
+          tabindex="-1"
+          id="adminMobileMenu"
+          aria-label="Kimberly Hotels"
+        >
+          <div class="offcanvas-header">
+            <a href="#" class="navbar-brand offcanvas-title height-50px ms-3">
+              <img src="img/logo.png" alt="Our Logo" class="h-100" />
             </a>
-            <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
-                <div class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4">
-                    <h6 class="text-pink fs-body-1 fw-700 m-0">Kingston I.</h6>
-                    <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
-                </div>
-                <div class="user-pic">
-                    <img src="img/user-img.png" alt="User image" class="img-fluid">
-                </div>
-            </div>
-        </nav>
+          </div>
+          <div class="offcanvas-body"></div>
+        </div>
+        <a
+          href="#"
+          class="navbar-brand height-50px lg-height-75px ms-0 ms-lg-4 ms-xl-5"
+        >
+          <img src="img/logo.png" alt="Our Logo" class="h-100" />
+        </a>
+        <div class="user me-3 me-lg-4 me-xl-5 d-flex align-items-center">
+          <div
+            class="user-text d-none d-lg-flex flex-column justify-content-center me-lg-4"
+          >
+            <h6 class="text-pink fs-body-1 fw-700 m-0">Kingston I.</h6>
+            <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+          </div>
+          <div class="user-pic">
+            <img src="img/user-img.png" alt="User image" class="img-fluid" />
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- First section -->
 
-    <Section class="bg-res mx-lg-5 mt-0 mt-lg-4 p-0 position-relative">
-        <div class="res-detail-hd mx-0 py-2 ps-4 ps-lg-5 py-lg-5 w-100 position-absolute bottom-0">
-            <h3 class="text-pink fs-headline-3">Reservation Details</h3>
-        </div>
-    </Section>
+    <section class="bg-res mx-lg-5 mt-0 mt-lg-4 p-0 position-relative">
+      <div
+        class="res-detail-hd mx-0 py-2 ps-4 ps-lg-5 py-lg-5 w-100 position-absolute bottom-0"
+      >
+        <h3 class="text-pink fs-headline-3">Reservation Details</h3>
+      </div>
+    </section>
     <!--  -->
 
     <!-- Second section -->
-    <Section class="res-details mx-lg-5 bg-white box-shad-kc pt-2 pb-5">
-        <div class="check d-lg-flex">
-            <div class="check-in w-100">
-                <div class="check-title border-line-b ps-4 ps-lg-5 pt-5 pb-2 py-lg-5">
-                    <p class="mb-2 mb-lg-4 ps-lg-3 fs-body-2 text-uppercase">check-in</p>
-                    <p class="mb-0 fs-body-2 ps-lg-3 text-uppercase text-pink">December 18, 2022</p>
-                </div>
-                <div class="check-details ms-4 ms-lg-0 ps-lg-5 py-2">
-                    <div class="each-detail mb-3 mb-lg-4 ps-lg-3 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="name">Name:</span>Udeme Jonah</p>
-                    </div>
-                    <div class="each-detail mb-3 mb-lg-4 ps-lg-3 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="phone">Phone:</span>08012345678</p>
-                    </div>
-                    <div class="each-detail me-5 mb-3 mb-lg-4 ps-lg-3 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="address">Address:</span>Durban street opposite H-medics Wuse 2 Abuja</p>
-                    </div>
-                    <div class="each-detail mb-3 mb-lg-4 ps-lg-3 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="email">Email:</span>Udemejonah@gmail.com</p>
-                    </div>
-                    <div class="each-detail ps-lg-3 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="amount">Amount Paid:</span>160,000 naira</p>
-                    </div>
-                </div>
+    <section class="res-details mx-lg-5 bg-white box-shad-kc pt-2 pb-5">
+      <div class="check d-lg-flex">
+        <div class="check-in w-100">
+          <div class="check-title border-line-b ps-4 ps-lg-5 pt-5 pb-2 py-lg-5">
+            <p class="mb-2 mb-lg-4 ps-lg-3 fs-body-2 text-uppercase">
+              check-in
+            </p>
+            <p class="mb-0 fs-body-2 ps-lg-3 text-uppercase text-pink">
+              December 18, 2022
+            </p>
+          </div>
+          <div class="check-details ms-4 ms-lg-0 ps-lg-5 py-2">
+            <div class="each-detail mb-3 mb-lg-4 ps-lg-3 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="name">Name:</span>Udeme
+                Jonah
+              </p>
             </div>
-            <div class="check-out d-flex flex-column width-100 lg-width-75">
-                <div class="check-title ps-4 ps-lg-0 border-line-b border-line-t py-2 py-lg-5">
-                    <p class="mb-2 mb-lg-4 fs-body-2 text-uppercase">check-out</p>
-                    <p class="mb-0 fs-body-2 text-uppercase text-pink">December 19, 2022</p>
-                </div>
-                <div class="check-details ms-4 ms-lg-0 py-2">
-                    <div class="each-detail mb-3 mb-lg-4 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="roomType">Room type:</span>Deluxe room</p>
-                    </div>
-                    <div class="each-detail mb-3 mb-lg-4 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="numNights">Number of Nights</span>2</p>
-                    </div>
-                    <div class="each-detail mb-3 mb-lg-4 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="numRooms">Number of Rooms</span>1</p>
-                    </div>
-                    <div class="each-detail mb-3 mb-lg-4 d-flex">
-                        <p class="fs-body-2"><span class="fw-700 me-3 fs-label" for="numGuests">Number of Guests:</span>2 Adults</p>
-                    </div>
-                    <div class="each-detail d-flex">
-                        <p class="fs-body-2"> <span class="fw-700 me-3 fs-label">Booking Number:</span>12345678</p>
-                    </div>
-                </div>
+            <div class="each-detail mb-3 mb-lg-4 ps-lg-3 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="phone">Phone:</span
+                >08012345678
+              </p>
             </div>
+            <div class="each-detail me-5 mb-3 mb-lg-4 ps-lg-3 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="address">Address:</span
+                >Durban street opposite H-medics Wuse 2 Abuja
+              </p>
+            </div>
+            <div class="each-detail mb-3 mb-lg-4 ps-lg-3 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="email">Email:</span
+                >Udemejonah@gmail.com
+              </p>
+            </div>
+            <div class="each-detail ps-lg-3 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="amount"
+                  >Amount Paid:</span
+                >160,000 naira
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="check-out d-flex flex-column width-100 lg-width-75">
+          <div
+            class="check-title ps-4 ps-lg-0 border-line-b border-line-t py-2 py-lg-5"
+          >
+            <p class="mb-2 mb-lg-4 fs-body-2 text-uppercase">check-out</p>
+            <p class="mb-0 fs-body-2 text-uppercase text-pink">
+              December 19, 2022
+            </p>
+          </div>
+          <div class="check-details ms-4 ms-lg-0 py-2">
+            <div class="each-detail mb-3 mb-lg-4 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="roomType"
+                  >Room type:</span
+                >Deluxe room
+              </p>
+            </div>
+            <div class="each-detail mb-3 mb-lg-4 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="numNights"
+                  >Number of Nights</span
+                >2
+              </p>
+            </div>
+            <div class="each-detail mb-3 mb-lg-4 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="numRooms"
+                  >Number of Rooms</span
+                >1
+              </p>
+            </div>
+            <div class="each-detail mb-3 mb-lg-4 d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label" for="numGuests"
+                  >Number of Guests:</span
+                >2 Adults
+              </p>
+            </div>
+            <div class="each-detail d-flex">
+              <p class="fs-body-2">
+                <span class="fw-700 me-3 fs-label">Booking Number:</span
+                >12345678
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="buttons ms-lg-5 d-flex flex-column-reverse align-items-center flex-lg-row mt-3 mt-lg-5 pt-lg-4 pb-5 pb-lg-0 ps-lg-3">
-            <button class="ghost-primary-btn text-center text-pink width-75 lg-width-25 fw-700 me-lg-3 px-5 py-3 bdr-rad-2">Back</button>
-            <button class="primary-btn text-center width-75 lg-width-25 fw-700 mb-3 mb-lg-0 px-5 py-3 bdr-rad-2">Confirm</button>
-        </div>
-    </Section>
+      <div
+        class="buttons ms-lg-5 d-flex flex-column-reverse align-items-center flex-lg-row mt-3 mt-lg-5 pt-lg-4 pb-5 pb-lg-0 ps-lg-3"
+      >
+        <button
+          class="ghost-primary-btn text-center text-pink width-75 lg-width-25 fw-700 me-lg-3 px-5 py-3 bdr-rad-2"
+        >
+          Back
+        </button>
+        <button
+          class="primary-btn text-center width-75 lg-width-25 fw-700 mb-3 mb-lg-0 px-5 py-3 bdr-rad-2"
+        >
+          Confirm
+        </button>
+      </div>
+    </section>
     <!--  -->
-    <footer id="main-footer" class=" bg-neutral-footer text-white mt-5">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-lg-4 col-md-12 mt-5">
-                    <div class="">
-                        <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
-                        <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
-                    </div>
-                    <form action="" method="post">
-                        <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
-                            <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
-                            <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
-                        </div>
-                    </form>
-                    
-                </div>
 
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
-                    
-                    <h6 class="fs-input mb-3">Restaurants</h6>
-                    <h6 class="fs-input mb-3">Rooms and Suites</h6>
-                    <h6 class="fs-input mb-3">Events</h6>
-                    
-                </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- Please be sure you have this included for admin pages -->
+    <script src="js/main.js"></script>
+    <!-- It's for the icons in the sidenav -->
 
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Company</h5>
-                    
-                    <h6 class="fs-input mb-2">About us</h6>
-                    <h6 class="fs-input mb-2">Blog</h6>
-                    <h6 class="fs-input mb-2">Contact us</h6>
-                    <h6 class="fs-input mb-4">Services</h6>
-                </div>
-
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Support</h5>
-                    
-                    <h6 class="fs-input mb-2">Support center</h6>
-                    <h6 class="fs-input mb-2">FAQ</h6>
-                    <h6 class="fs-input mb-2">Privacy Policy</h6>
-                    <h6 class="fs-input mb-4">Terms of service</h6>
-                </div>
-
-                <div class="col-lg-2 col-md-12 mt-5">
-                    <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
-                    <i class="fa-brands fa-instagram me-4 mb-5"></i>
-                    <i class="fa-brands fa-twitter me-4"></i>
-                    <i class="fa-brands fa-facebook-square"></i>
-                </div>
-
-            </div>
-
-        <div class="row">
-                <p class="mb-4  mt-5  text-center fs-copyright">Copyright &copy; 2022 Kodecamp. All Right Reserved</p>
-        </div>
-        </div>
-    </footer>
-
-<script src="js/bootstrap.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <!-- Please be sure you have this included for admin pages -->
-<script src="js/main.js"></script>                                          <!-- It's for the icons in the sidenav -->
-
-<script>
-    AOS.init();
-</script>
-</body>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
