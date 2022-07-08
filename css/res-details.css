@@ -25,7 +25,7 @@ input[type="checkbox"] {
   border-radius: 0 0 5px 5px;
 }
 
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 992px) {
   .bg-res {
     height: 90vh;
   }
