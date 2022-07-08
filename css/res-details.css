@@ -1,0 +1,35 @@
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.bg-res {
+  background: url("../img/dam-resdet.png") no-repeat center/cover;
+  height: 30vh;
+}
+
+.res-detail-hd,
+.res-summary-hd {
+  background: rgba(255, 255, 255, 0.88);
+  opacity: 0.9;
+  border-radius: 10px 10px 0 0;
+}
+
+.border-line-b {
+  border-bottom: 1px solid rgba(7, 109, 243, 0.2) !important;
+}
+.border-line-t {
+  border-top: 1px solid rgba(7, 109, 243, 0.2) !important;
+}
+
+.res-details {
+  border-radius: 0 0 5px 5px;
+}
+
+@media screen and (min-width: 790px) {
+  .bg-res {
+    height: 90vh;
+  }
+  .border-line-t {
+    border-top: 1px solid rgba(7, 109, 243, 0.2) !important;
+  }
+}
