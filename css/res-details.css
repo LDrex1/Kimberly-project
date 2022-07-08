@@ -1,6 +1,7 @@
 .bg-res {
   background: url("../img/dam-resdet.png") no-repeat center/cover;
-  height: 30vh;
+  height: 35vh;
+  min-height: 200px;
 }
 
 .res-detail-hd {
