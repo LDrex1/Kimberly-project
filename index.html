@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Life - Make yourself comfortable.">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/card-input.css">
+    
+    <title>card-input</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body class="bg-neutral-5">
+
+    <header class="bg-white">
+        <nav class="navbar bg-transparent py-3 py-md-5 py-lg-0">
+            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-lg-4 ms-xl-5">
+            <img src="img/logo.png" alt="Our Logo" class="h-100">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Back Button laptop only-->
+    <div class="d-none d-lg-block buttons container mt-0 mt-lg-4">
+        <button
+          class="primary-btn text-center width-75 md-width-25 fw-700 px-5 py-3 bdr-rad-2"
+        >
+          Back
+        </button>
+      </div>
+
+    <!-- Section 1 -->
+    <section class="mt-4">
+        <h2 class="mb-4 container">Card Details</h2>
+        <form action="" class="pt-lg-4">
+            <div class="container input-group d-flex justify-content-between">
+                <div class="short-input width-100 lg-width-42 mt-2 mb-4 position-relative">
+                    <label class="fs-body-1 mb-1" for="card-number">Card Number</label>
+                    <input type="number" name="card-number" id="card-number" class="form-input-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" required>
+                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                </div>
+                <div class="short-input mini-input d-flex flex-wrap justify-content-start align-items-center width-100 lg-width-48 mt-2 mb-4 position-relative">
+                    <label class="fs-body-1 mb-1 w-100" for="expiring-date">Expiring Date</label>
+                    <div class="month">
+                        <select name="month" id="expiring-date" class="form-input-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" required>
+                            
+                            <option value=""></option>
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+
+                        </select>
+                    </div>
+                    <p class="ms-2 me-2 my-auto">/</p>
+                    <div class="year">
+                        <select id="year" name="year" class="form-input-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" required>
+                            <option value=""></option>
+                        
+                        </select>
+                    </div>
+                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="container input-group d-flex justify-content-between">
+                <div class="short-input width-100 lg-width-42 mt-2 mb-4 position-relative">
+                    <label class="fs-body-1 mb-1" for="card-number">Card Holder Name</label>
+                    <input type="number" name="card-number" id="card-number" class="form-input-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" required>
+                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                </div>
+                <div class="short-input mini-input d-flex flex-wrap justify-content-start align-items-center width-100 lg-width-48 mt-2 mb-4 position-relative">
+                    <label class="fs-body-1 mb-1 w-100" for="expiring-date">CVC</label>
+            
+                        <input type="text" pattern="\d{3}" maxlength="3" name="month" id="expiring-date" class="form-input-1 w-100 fs-form-input bdr-rad-2 py-3 px-5 mt-1 text-black" required>
+                    <p class="input-notification-text fw-700 fs-form-input mt-1 position-absolute top-100 start-0"></p>
+                </div>
+            </div>
+            <div class="form-input-1 py-4 mt-5 d-flex justify-content-center align-items-center">
+                <div>
+                    <img class="img-fluid"  src="img/dam-visa.png" alt="">
+                </div>
+                <div class="ms-4 ms-lg-5 me-4 me-lg-5">
+                    <img class="img-fluid"  src="img/dam-master.png" alt="">
+                </div>
+                <div>
+                    <img class="img-fluid"  src="img/dam-verve.png" alt="">
+                </div>
+            </div>
+            <!--  -->
+            <div class="buttons d-flex flex-column-reverse align-items-center text-center container mt-3 mt-lg-5 mb-2 mb-lg-5 pt-5 pt-lg-3 pb-5 pb-lg-5">
+                <button
+                  class="primary-btn back d-lg-none text-center width-75 md-width-40 lg-width-25 fw-700 px-5 py-3 bdr-rad-2"
+                >
+                  Go Back
+                </button>
+                <button
+                type="submit"
+                  class="primary-btn text-center text-uppercase width-75 md-width-40 lg-width-25 fw-700 mb-4 px-5 py-3 bdr-rad-2"
+                >
+                pay now
+                </button>
+              </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class=" bg-neutral-footer text-white mt-3">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-12 mt-5">
+                    <div class="">
+                        <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
+                        <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
+                    </div>
+                    <form action="" method="post">
+                        <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
+                            <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
+                            <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
+                    
+                    <h6 class="fs-input mb-3">Restaurants</h6>
+                    <h6 class="fs-input mb-3">Rooms and Suites</h6>
+                    <h6 class="fs-input mb-3">Events</h6>
+                    
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Company</h5>
+                    
+                    <h6 class="fs-input mb-2">About us</h6>
+                    <h6 class="fs-input mb-2">Blog</h6>
+                    <h6 class="fs-input mb-2">Contact us</h6>
+                    <h6 class="fs-input mb-4">Services</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Support</h5>
+                    
+                    <h6 class="fs-input mb-2">Support center</h6>
+                    <h6 class="fs-input mb-2">FAQ</h6>
+                    <h6 class="fs-input mb-2">Privacy Policy</h6>
+                    <h6 class="fs-input mb-4">Terms of service</h6>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mt-5">
+                    <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
+                    <i class="fa-brands fa-instagram me-4 mb-5"></i>
+                    <i class="fa-brands fa-twitter me-4"></i>
+                    <i class="fa-brands fa-facebook-square"></i>
+                </div>
+
+            </div>
+
+           <div class="row">
+                <p class="mb-4  mt-5  text-center fs-copyright">Copyright &copy; 2022 Kodecamp. All Right Reserved</p>
+           </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script> <!-- Please be sure you have this included for admin pages -->
+    <script src="js/main.js"></script>                                          <!-- It's for the icons in the sidenav -->
+    <script src="js/card-input.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
