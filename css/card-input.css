@@ -26,7 +26,10 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 129px !important;
 }
 
-@media screen and (max-width: 598px) {
+@media screen and (max-width: 992px) {
+  .bg-neutral-5 {
+    background-color: white !important;
+  }
   input,
   select {
     border: 1px solid #1a1a1a !important;
