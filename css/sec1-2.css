@@ -1,0 +1,147 @@
+.translate-x {
+  transform: translateX(50%);
+}
+
+.fs-12-14 {
+  font-size: 14px;
+}
+
+section.hero {
+  background: url("../img/Bakgnd-2-1.png") rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  min-height: 80vh;
+}
+
+section {
+  overflow: hidden;
+}
+
+.border-blue {
+  border: 1px solid rgba(7, 109, 243, 0.2);
+}
+
+.hero .title {
+  color: #ffffff;
+}
+
+.facilities {
+  justify-content: space-around !important;
+  align-items: stretch !important;
+  row-gap: 0;
+}
+
+.facilities-caption {
+  font-size: 24px;
+}
+
+.each-facility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23vw;
+}
+
+.card img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.rooms .swiper-wrapper :last-child {
+  margin-bottom: 0 !important;
+}
+
+.currency {
+  display: flex;
+  width: 16px;
+  aspect-ratio: 1;
+}
+
+.currency img {
+  object-fit: contain;
+}
+
+.rooms .swiper-slide {
+  height: auto;
+}
+
+.rooms .card img {
+  aspect-ratio: 1.49;
+}
+
+.buttons :last-child {
+  color: white;
+}
+
+.gallery .image {
+  display: flex;
+  height: 60vh;
+  /* aspect-ratio: 1.0748; */
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 992px) {
+  section.hero {
+    min-height: 40vh;
+  }
+
+  .gallery-img-header {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(7, 109, 243, 0.2);
+  }
+
+  .gallery-header {
+    text-decoration: none !important;
+    font-size: 20px;
+  }
+
+  .facilities {
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    row-gap: 20px;
+  }
+
+  .fs-12-14 {
+    font-size: 12px;
+  }
+
+  .each-facility {
+    width: 43vw;
+    border-radius: 5px;
+  }
+
+  .rooms .swiper-wrapper .bg-neutral-4 {
+    background: white;
+  }
+
+  .rooms .swiper-slide .text-decoration-underline {
+    text-decoration: none !important;
+  }
+
+  .facilities-caption {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section.rooms {
+    max-width: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .hero .buttons button {
+    width: auto;
+  }
+}
