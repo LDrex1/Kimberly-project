@@ -1,7 +1,105 @@
+let today = new Date();
+let dateToday = document.querySelector('#day-today');
+
+if (today.getDate() == 1) {
+  dateToday.innerHTML = "01";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 2) {
+  dateToday.innerHTML = "02";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 3) {
+  dateToday.innerHTML = "03";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 4) {
+  dateToday.innerHTML = "04";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 5) {
+  dateToday.innerHTML = "05";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 6) {
+  dateToday.innerHTML = "06";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 7) {
+  dateToday.innerHTML = "07";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 8) {
+  dateToday.innerHTML = "08";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 9) {
+  dateToday.innerHTML = "09";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 10) {
+  dateToday.innerHTML = "10";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 11) {
+  dateToday.innerHTML = "11";
+  dateToday.style.left = "8px";
+} else if (today.getDate() == 12) {
+  dateToday.innerHTML = "12";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 13) {
+  dateToday.innerHTML = "13";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 14) {
+  dateToday.innerHTML = "14";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 15) {
+  dateToday.innerHTML = "15";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 16) {
+  dateToday.innerHTML = "16";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 17) {
+  dateToday.innerHTML = "17";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 18) {
+  dateToday.innerHTML = "18";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 19) {
+  dateToday.innerHTML = "19";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 20) {
+  dateToday.innerHTML = "20";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 21) {
+  dateToday.innerHTML = "21";
+  dateToday.style.left = "7px";
+} else if (today.getDate() == 22) {
+  dateToday.innerHTML = "22";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 23) {
+  dateToday.innerHTML = "23";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 24) {
+  dateToday.innerHTML = "24";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 25) {
+  dateToday.innerHTML = "25";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 26) {
+  dateToday.innerHTML = "26";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 27) {
+  dateToday.innerHTML = "27";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 28) {
+  dateToday.innerHTML = "28";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 29) {
+  dateToday.innerHTML = "29";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 30) {
+  dateToday.innerHTML = "30";
+  dateToday.style.left = "5px";
+} else if (today.getDate() == 31) {
+  dateToday.innerHTML = "31";
+  dateToday.style.left = "7px";
+}
+
 function passwordToggle(){
-  var input = document.getElementById("password1");
-  var eyeOpen = document.getElementById("eye-open1");
-  var eyeClosed = document.getElementById("eye-closed1");
+  let input = document.getElementById("password1");
+  let eyeOpen = document.getElementById("eye-open1");
+  let eyeClosed = document.getElementById("eye-closed1");
 
   if (input.type ==="password"){
     input.type = "text";
@@ -16,9 +114,26 @@ function passwordToggle(){
 }
 
 function passwordToggleTwo(){
-  var input = document.getElementById("password2");
-  var eyeOpen = document.getElementById("eye-open2");
-  var eyeClosed = document.getElementById("eye-closed2");
+  let input = document.getElementById("password2");
+  let eyeOpen = document.getElementById("eye-open2");
+  let eyeClosed = document.getElementById("eye-closed2");
+
+  if (input.type ==="password"){
+    input.type = "text";
+    eyeClosed.style.display = "none";
+    eyeOpen.style.display = "block";
+  }
+  else{
+    input.type = "password";
+    eyeOpen.style.display = "none";
+    eyeClosed.style.display = "block";  
+  }
+}
+
+function passwordToggleThree(){
+  let input = document.getElementById("password3");
+  let eyeOpen = document.getElementById("eye-open3");
+  let eyeClosed = document.getElementById("eye-closed3");
 
   if (input.type ==="password"){
     input.type = "text";
