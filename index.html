@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/card-input.css">
@@ -18,15 +19,235 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 </head>
-<body class="bg-neutral-5">
-
-    <header class="bg-white">
-        <nav class="navbar bg-transparent py-3 py-md-5 py-lg-0">
-            <a href="#" class="navbar-brand height-50px md-height-75px ms-3 ms-lg-4 ms-xl-5">
-            <img src="img/logo.png" alt="Our Logo" class="h-100">
-            </a>
+<body class="">
+    <header class="bg-white d-lg-flex justify-content-center py-lg-0">
+        <nav class="navbar bg-transparent py-3 py-lg-0">
+          <a
+            href="index.html"
+            class="navbar-brand height-50px md-height-75px ms-3 ms-md-5 ms-lg-4 ms-xl-5"
+          >
+            <img src="img/logo.png" alt="Our Logo" class="h-100" />
+          </a>
+          <button
+            class="navbar-toggler bg-pink-1 d-block d-lg-none py-2 px-3 me-3 me-md-5 shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#adminMobileMenu"
+            aria-controls="adminMobileMenu"
+          >
+            <span class=""><i class="fa-solid fa-bars text-white"></i></span>
+          </button>
+  
+          <div
+            class="offcanvas offcanvas-start width-200px"
+            tabindex="-1"
+            id="adminMobileMenu"
+            aria-label="Kimberly Hotels"
+          >
+            <div class="offcanvas-header"></div>
+            <div class="offcanvas-body p-0">
+              <div class="user mb-4 ms-2 d-flex align-items-center">
+                <div class="offcanvas-user-pic width-75px height-75px">
+                  <img
+                    src="img/user-img.png"
+                    alt="User image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="user-text d-flex flex-column justify-content-center ms-2"
+                >
+                  <h6 class="text-pink fs-body-2 fw-700 m-0">Kingston I.</h6>
+                  <p class="text-grey-1 text-center fs-input m-0 mt-1">Admin</p>
+                </div>
+              </div>
+              <div
+                class="sidenav bg-white d-flex flex-column justify-content-between"
+              >
+                <div
+                  class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1"
+                >
+                  <a
+                    href="dashboard.html"
+                    class="text-decoration-none bg-white ps-4 py-2 width-98"
+                  >
+                    <p
+                      class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"
+                    >
+                      <span
+                        class="iconify fs-body-2"
+                        data-icon="tabler:layout-dashboard"
+                      ></span>
+                      Dashboard
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1 active"
+                >
+                  <a
+                    href="bookings.html"
+                    class="text-decoration-none bg-white ps-4 py-2 width-98"
+                  >
+                    <p
+                      class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"
+                    >
+                      <span
+                        class="iconify fs-body-2"
+                        data-icon="eva:home-outline"
+                      ></span>
+                      Bookings
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1"
+                >
+                  <a
+                    href="guests.html"
+                    class="text-decoration-none bg-white ps-4 py-2 width-98"
+                  >
+                    <p
+                      class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"
+                    >
+                      <span
+                        class="iconify fs-body-2"
+                        data-icon="fluent:people-community-24-regular"
+                      ></span>
+                      Guests
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1"
+                >
+                  <a
+                    href="employees.html"
+                    class="text-decoration-none bg-white ps-4 py-2 width-98"
+                  >
+                    <p
+                      class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"
+                    >
+                      <span
+                        class="iconify fs-body-2"
+                        data-icon="prime:id-card"
+                      ></span>
+                      Employees
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1"
+                >
+                  <a
+                    href="notifications.html"
+                    class="text-decoration-none bg-white ps-4 py-2 width-98"
+                  >
+                    <p
+                      class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"
+                    >
+                      <span
+                        class="iconify fs-body-2"
+                        data-icon="ion:notifications-outline"
+                      ></span>
+                      Notifications
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="sidenav-link bg-white d-flex align-items-center justify-content-start my-1"
+                >
+                  <a
+                    href="settings.html"
+                    class="text-decoration-none bg-white ps-4 py-2 width-98"
+                  >
+                    <p
+                      class="text-grey-1 fs-sidenav text-start mx-0 my-0 ms-xl-2"
+                    >
+                      <span
+                        class="iconify fs-body-2"
+                        data-icon="fluent:settings-24-regular"
+                        data-rotate="90deg"
+                      ></span>
+                      Settings
+                    </p>
+                  </a>
+                </div>
+                <div
+                  class="sidenav-link logout bg-white d-flex align-items-center justify-content-start my-1"
+                >
+                  <a
+                    class="text-decoration-none bg-white ps-4 py-2 width-98 position-relative"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#logoutModalNav"
+                  >
+                    <p
+                      class="text-grey-1 fs-sidenav error-text text-start mx-0 my-0 ms-xl-2"
+                    >
+                      <span
+                        class="iconify fs-body-2"
+                        data-icon="fluent:power-24-filled"
+                      ></span>
+                      Log out
+                    </p>
+                  </a>
+                  <div
+                    class="modal"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    id="logoutModalNav"
+                    tabindex="-1"
+                    aria-label="Logout"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div
+                        class="modal-content bg-white border border-secondary p-0"
+                      >
+                        <div class="modal-body p-4 p-md-5">
+                          <h6
+                            class="text-center fs-body-2 text-black fw-700 mt-4"
+                          >
+                            Are you sure you want to logout?
+                          </h6>
+                          <div class="d-flex justify-content-between pt-2 pb-4">
+                            <button
+                              type="button"
+                              class="ghost-primary-btn width-48 text-center fs-body-2 fw-700 text-pink bdr-rad-2 py-3 my-3"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            >
+                              No
+                            </button>
+                            <a
+                              href="login.html"
+                              class="text-decoration-none width-48 p-0 my-3"
+                              ><button
+                                type="button"
+                                class="primary-btn width-100 text-center fs-body-2 fw-700 text-white bdr-rad-2 py-3"
+                              >
+                                Yes
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
+  
+      <!-- First section (mobile only) -->
+      <section class="bg-white d-lg-none mx-lg-5 mt-0 mt-lg-4 p-0">
+        <div class="res-detail-hd mx-0 py-2 ps-lg-5 py-lg-5">
+          <h3 class="fs-headline-3 fw-700 text-center">Pay with Bank Card</h3>
+        </div>
+      </section>
 
     <!-- Back Button laptop only-->
     <div class="d-none d-lg-block buttons container mt-0 mt-lg-4">
@@ -120,8 +341,7 @@
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer id="main-footer" class=" bg-neutral-footer text-white mt-3">
+    <footer id="main-footer" class=" bg-neutral-footer text-white">
         <div class="container">
             <div class="row py-5">
                 <div class="col-lg-4 col-md-12 mt-5">
@@ -129,10 +349,10 @@
                         <h5 class="fs-footer fw-700 mb-4">Join our Newsletter</h4>
                         <h6 class="fs-input mb-5">Drop your mail below to get update<br> about us, latest news, tips and more!</h6>
                     </div>
-                    <form action="" method="post">
-                        <div class="width-80 md-width-50 lg-width-95 xl-width-80 d-flex">
-                            <input type="text" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
-                            <button type="submit" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
+                    <form id="footer-search-form" action="" method="">
+                        <div class="width-80 laka md-width-50 lg-width-95 xl-width-80 d-flex">
+                            <input type="text" id="footer-search-input" class="form-input-footer box-shad-1 fs-input mb-5 width-85 py-3 px-3" placeholder="Enter your email">
+                            <button type="submit" id="footer-search-btn" class="input-button width-15 h-50 fs-input py-3"><i class="fa fa-arrow-right fs-input"></i></button>
                         </div>
                     </form>
                     
@@ -141,35 +361,34 @@
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Hotel Facilities</h5>
                     
-                    <h6 class="fs-input mb-3">Restaurants</h6>
-                    <h6 class="fs-input mb-3">Rooms and Suites</h6>
-                    <h6 class="fs-input mb-3">Events</h6>
+                    <a href="restaurants.html" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Restaurants</h6></a>
+                    <a href="rooms.html" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Rooms and Suites</h6></a>
+                    <a href="events.html" class="text-decoration-none text-white"><h6 class="fs-input mb-3">Events</h6></a>
                     
                 </div>
 
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Company</h5>
                     
-                    <h6 class="fs-input mb-2">About us</h6>
-                    <h6 class="fs-input mb-2">Blog</h6>
-                    <h6 class="fs-input mb-2">Contact us</h6>
-                    <h6 class="fs-input mb-4">Services</h6>
+                    <a href="about-us.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">About us</h6></a>
+                    <a href="blog.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Blog</h6></a>
+                    <a href="contact-us.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Contact us</h6></a>
+                    <a href="services.html" class="text-decoration-none text-white"><h6 class="fs-input mb-4">Services</h6></a>
                 </div>
 
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Support</h5>
                     
-                    <h6 class="fs-input mb-2">Support center</h6>
-                    <h6 class="fs-input mb-2">FAQ</h6>
-                    <h6 class="fs-input mb-2">Privacy Policy</h6>
-                    <h6 class="fs-input mb-4">Terms of service</h6>
+                    <a href="frequently-asked-questions.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">FAQ</h6></a>
+                    <a href="privacy-policy.html" class="text-decoration-none text-white"><h6 class="fs-input mb-2">Privacy Policy</h6></a>
+                    <a href="terms-of-service.html" class="text-decoration-none text-white"><h6 class="fs-input mb-4">Terms of service</h6></a>
                 </div>
 
                 <div class="col-lg-2 col-md-12 mt-5">
                     <h5 class="fs-footer fw-700 mb-4">Get in touch</h5>
-                    <i class="fa-brands fa-instagram me-4 mb-5"></i>
-                    <i class="fa-brands fa-twitter me-4"></i>
-                    <i class="fa-brands fa-facebook-square"></i>
+                    <a href="http://www.instagram.com" class="text-decoration-none text-white"><i class="fa-brands fa-instagram me-4 mb-5"></i></a>
+                    <a href="http://www.twitter.com" class="text-decoration-none text-white"><i class="fa-brands fa-twitter me-4"></i></a>
+                    <a href="http://www.facebook.com" class="text-decoration-none text-white"><i class="fa-brands fa-facebook-square"></i></a>
                 </div>
 
             </div>
